@@ -9,3 +9,9 @@ Receiver Separation is NOT built equal.
 Receivers like Tyler Lockett (Seahawks) are short, quick, and line up often in the 'slot.' Others, like Cooper Kupp (Rams), are slightly bigger, line up 'tight' to the line of scrimmage, and often run shallow routes, rarely stretching deep downfield. Different still are the physical, big-framed receivers (Allen Robinson, Bears or Mike Evans, Bucs) whom  often line up out 'Wide',  are usually smothered by the opposing team's best cornerback, and are targeted deep often. 
 
 It's not fair to compare receiver separations to say "hey, receiver X is better at creating separation than receiver Y because he averages more separation." To try and account for this, I want to create a predicted separation metric that will aide in accounting for these differences in team role/resposibility/body type. When aggregated over a course of a game, season, or career, this 'expected separation' value will bring context into the players TRUE ability to separate given their in-play circumstances as well as giving descriptive context into the situations a certain receiver sees. 
+
+# Results
+
+![image](https://user-images.githubusercontent.com/66449877/88740284-998be780-d0f1-11ea-9ef9-e9d041b78f0b.png)
+
+![image](https://user-images.githubusercontent.com/66449877/88740020-e9b67a00-d0f0-11ea-96b2-07f27c29645f.png)
