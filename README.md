@@ -12,6 +12,14 @@ It's not fair to compare receiver separations to say "hey, receiver X is better 
 
 # Results
 
+Using a tree-based model, we ended up using 19 features (both numericaol and categorical) to train. The most important features to predicting receiver separation (in order of importance):
+
+  1. Yards from Success -
+  2. Pre-snap Cushion - The distance
+  3. NDP_CB - Whether or not the nearest defender was a CB (this was the only categorical value to be of real value to the model)
+  4. Time to Throw - How long from the time of snap did the QB take to pass the ball (seconds)
+  5. Air Time - How long the pass took to reach its targeted recevier (seconds)
+
 ![image](https://user-images.githubusercontent.com/66449877/88740284-998be780-d0f1-11ea-9ef9-e9d041b78f0b.png)
 
 ![image](https://user-images.githubusercontent.com/66449877/88740020-e9b67a00-d0f0-11ea-96b2-07f27c29645f.png)
