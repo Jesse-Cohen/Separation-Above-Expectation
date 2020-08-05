@@ -69,22 +69,22 @@ Yes, that is true, but receiver separation above expectation is actually a **bet
 
 ## Player Evaluation
 
-Separation Above Expectation aids in our understanding how recievers perform relative to their peers. In the example below, you can see how Tyreek Hill, a player who is predicted to average roughly the same separation as Larry Fizgerald 
-
-<img width="900" alt="Screen Shot 2020-08-05 at 10 09 40 AM" src="https://user-images.githubusercontent.com/66449877/89442790-42df6880-d704-11ea-971b-e71fb81b564f.png">
+<img width="900" alt="Screen Shot 2020-08-05 at 4 09 16 PM" src="https://user-images.githubusercontent.com/66449877/89472777-09275580-d736-11ea-8f43-bb5255b78c47.png">
 
 The plot above shows the differences between predicted and actual average separations of receivers with at least 175 targets in the last three seasons. 
 
-Players **above** the diagonal line excel at gaining separation relative to their predicted separation. To see the full interactive plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) 
+The vertical distance **above the diagonal line** represents Separation Above Expectation, and we can now see more clearly how DeSean Jackson's 2.7 yards of separation is actually +0.3 yards above expectation, while Golden Tate's 2.7 yards of separation is -0.5 yards above (or .5 yards below) expectation. 
 
-<img width="900" alt="Screen Shot 2020-08-05 at 11 18 43 AM" src="https://user-images.githubusercontent.com/66449877/89452449-84771000-d712-11ea-9d31-16f49352fdb8.png">
+To see an interactive version of this plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) for more info. 
+
 
 ## Main Takeaways
 
-   1. Separation Above Expectation is a **better predictor of team success** than Separation alone
-       - Separation Above Expectation has a 0.66 correlation to Team Win % vs .48 for Avg Separation since 2017
-   2. **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** lead the pack when it comes to comparing the best route-runners/separation-getters in the NFL.
-   3. Compare receviers **within clusters**, and select for positive expected separation differentials
+   1. Separation Above Expectation is a **better predictor of team success** than Separation
+       - Separation Above Expectation has a 0.66 correlation to Win % vs .48 for Avg Separation
+   2. Receiver Separation must be compared holistically by controlling for factors like depth of target, pre-snap cushion, and nearest defender
+       - **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** some of the best route-runners/separation-getters in the NFL.
+   3. Compare receviers **within clusters**, and select for positive Separation Above Expectation
        - From a team-building perspective, you cannot replace Antonio Brown with JuJu Smith-Schuster (as we all saw). Players with different body types and abilities have different team roles, and need to be accounted for when building a receiving corps. 
        
  ## Thanks for reading!
