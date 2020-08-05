@@ -20,10 +20,10 @@ The first iteration of our training set left us with ~30 features to help with p
        - The vertical distance beyond the yardage deemed to be a successful play for the offense
            - play success is defined in Feature Analysis and Engineering notebook, and is based on down and distance
        - Though Air_Yds was most impactful feature when using *all* our features, 'Yds_beyond_success' was the most helpful in predictions in smaller feature spaces
-   2. **Cushion**
-       - The distance (in yds) from the defender lined up across from the targeted receiver at the time of ball snap
-   3. **NDP**
+   2. **NDP**
        - A categorical feature with this mapping {Cornerbacks:0, Safeties+DBs:1, Linebackers:2, Defenseive Linemen:3}
+   3. **Cushion**
+       - The distance (in yds) from the defender lined up across from the targeted receiver at the time of ball snap
    4. **Air Time**
        - The time (in seconds) it takes for a pass to travel in the air from launch to when it reaches the targeted recevier
    5. **Endzone Distance**
@@ -31,7 +31,11 @@ The first iteration of our training set left us with ~30 features to help with p
        
 <img width="700" alt="Screen Shot 2020-08-05 at 11 15 54 AM" src="https://user-images.githubusercontent.com/66449877/89449122-7d99ce80-d70d-11ea-9663-567ca04cd9b8.png"> 
 
-<img width="900" alt="Screen Shot 2020-08-05 at 11 17 26 AM" src="https://user-images.githubusercontent.com/66449877/89449108-78d51a80-d70d-11ea-9caa-89e22b4fe210.png">
+## How does the model work?
+
+Below are two contrasting examples to show how the features combine to create predictions.
+
+<img width="1050" alt="Screen Shot 2020-08-05 at 11 16 23 AM" src="https://user-images.githubusercontent.com/66449877/89449113-7b377480-d70d-11ea-9ba7-868e7a7c16bf.png">
 
 On the above play, the model predicted that the player would have a **separation of 1.5 yards**, 1.4 yards less than the baseline prediction of ~2.9 yards. 
 
@@ -39,7 +43,7 @@ On this play the pass traveled 35 yards *beyond* the marker for a successful pla
 
 On the play, the player had an **actual separation of 1.3 yards**. 
 
-<img width="900" alt="Screen Shot 2020-08-05 at 11 16 23 AM" src="https://user-images.githubusercontent.com/66449877/89449113-7b377480-d70d-11ea-9ba7-868e7a7c16bf.png">
+<img width="1050" alt="Screen Shot 2020-08-05 at 11 17 26 AM" src="https://user-images.githubusercontent.com/66449877/89449108-78d51a80-d70d-11ea-9caa-89e22b4fe210.png">
        
 On this play, the model said that the player would have a **predicted separation of 7.5 yards**, +4.6 yards greater than the baseline of 2.9 yards. 
 
@@ -47,7 +51,36 @@ This was due mostly to the fact that the pass targeted a receiver that was 22 ya
 
 On the play, the player had an **actual separation of 6.7 yards**.
 
+## Why should you care?
+
+The goal of this exercise was to extract information from recevier separation to illustrate player role and understand how receivers perform relative to expectations/predictions. Below is a scatter plot showing how correlated **receiver separation above expectation** is to **team win percentage** over the last three seasons. 
+
 <img width="900" alt="Screen Shot 2020-08-05 at 10 04 59 AM" src="https://user-images.githubusercontent.com/66449877/89442771-3d821e00-d704-11ea-9ec2-4d57d9f6fb7d.png">
 
+Teams with higher receiver separation above expectation **won more often** than teams with lower separation differentials.
+
+I know what you are thinking...
+
+>"*of course it is! receiver separation is a good thing, so teams with higher separation win more!*"
+
+Yes, that is true, but, receiver separation above expectation is actually a **better predictor** of team success than average separation.
+
+<img width="700" alt="Screen Shot 2020-08-05 at 11 48 26 AM" src="https://user-images.githubusercontent.com/66449877/89453158-a6bd5d80-d713-11ea-9dce-d2313a892539.png">
+
+## Player Evaluation
+
 <img width="900" alt="Screen Shot 2020-08-05 at 10 09 40 AM" src="https://user-images.githubusercontent.com/66449877/89442790-42df6880-d704-11ea-971b-e71fb81b564f.png">
+<img width="900" alt="Screen Shot 2020-08-05 at 11 18 43 AM" src="https://user-images.githubusercontent.com/66449877/89452449-84771000-d712-11ea-9d31-16f49352fdb8.png">
+
+# Main Takeaways
+
+   1. Separation Differential is a **better predictor of team success** than Separation
+       - Separation Differential has a 0.66 correlation to Win % vs .48 for Avg Separation
+   2. **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** some of the best route-runners/separation-getters in the NFL.
+   3. Compare receviers **within clusters**, and select for positive expected separation differentials
+       - From a team-building perspective, you cannot replace Antonio Brown with JuJu Smith-Schuster (as we all saw). Players with different body types and abilities have different team roles, and need to be accounted for when building a receiving corps. 
+       
+ ## Thanks for reading!
+
+Thank you all for reading. If you have any questions, suggestions, or any feedback at all, feel free to reach out at JesseDCohen@gmail.com. 
 
