@@ -6,11 +6,13 @@ The goal of this project is to predict an NFL receiver's separation at the time 
 
 Receiver Separation is NOT built equal.
 
-Receivers like Tyler Lockett (Seahawks) are short, quick, and line up often in the 'slot.' Others, like Cooper Kupp (Rams), are slightly bigger, line up 'tight' to the line of scrimmage, and often run shallow routes, rarely stretching deep downfield. Different still are the physical, big-framed receivers (Mike Williams, Chargers or Kenny Golladay, Lions) whom often line up out 'Wide',  are usually smothered by the opposing team's best cornerback, and are targeted deep often. 
+<img width="900" alt="Screen Shot 2020-08-05 at 3 41 07 PM" src="https://user-images.githubusercontent.com/66449877/89471095-1b9f9000-d732-11ea-9a27-aa6fe53dc3cd.png">
 
-It's unfair to compare receiver separations to say "hey, receiver X is better at creating separation than receiver Y because he averages more separation." 
+In the chart above, we can see how players like **DeSean Jackson** (2.8) and **Golden Tate** (2.7) have nearly identical average separation, but their average depths of target are on opposite ends of the spectrum. If you were comparing these two receivers on separation alone, it would appear appropriate to claim that they gain separation at similar rates. This is clearly flawed, though, as we can see that deeper targets warrant less separation, so Jackson's 2.8 yards of average separation is actually significantly more impressive than Tate's 2.7 yards. 
 
-To try and account for this, my goal is to create a predicted separation metric that will aid in accounting for the per-player differences in team role/resposibility/body type. When aggregated over a course of a game, season, or career, this 'expected separation' value will bring context into the players TRUE ability to separate given their in-play circumstances as well as giving descriptive context into the situations a certain receiver sees. 
+How much more impressive is it?  Well, that's where predicted separation comes in.
+
+By accounting for things like depth of target (Air Yards), pre-snap cushion, the position of the nearest defender, *predicted separation* will aid in accounting for the per-play differences and help create a more comprehensive understanding of receiver separation. When aggregated over a course of a game, season, or career, this *predicted separation* value will bring context into the players TRUE ability to separate given their in-play circumstances as well as giving descriptive context into the situations a certain receiver sees. 
 
 # Results
 
@@ -53,30 +55,35 @@ On the play, the player had an **actual separation of 6.7 yards**.
 
 ## Why should you care?
 
-The goal of this exercise was to extract information from recevier separation to illustrate player role and understand how receivers perform relative to expectations/predictions. Below is a scatter plot showing how correlated **receiver separation above expectation** is to **team win percentage** over the last three seasons. 
+Below is a scatter plot showing how correlated **receiver separation above expectation** is to **team win percentage** over the last three seasons. 
 
 <img width="900" alt="Screen Shot 2020-08-05 at 10 04 59 AM" src="https://user-images.githubusercontent.com/66449877/89442771-3d821e00-d704-11ea-9ec2-4d57d9f6fb7d.png">
 
-Teams with higher receiver separation above expectation **won more often** than teams with lower separation differentials.
-
 I know what you are thinking...
 
->"*of course it is! receiver separation is a good thing, so teams with higher separation win more!*"
+>"*of course receiver separation is a good thing, teams that have more separation should win more!*"
 
-Yes, that is true, but, receiver separation above expectation is actually a **better predictor** of team success than average separation.
+Yes, that is true, but receiver separation above expectation is actually a **better predictor** of team success than average separation. Below is a correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
 
 <img width="700" alt="Screen Shot 2020-08-05 at 11 48 26 AM" src="https://user-images.githubusercontent.com/66449877/89453158-a6bd5d80-d713-11ea-9dce-d2313a892539.png">
 
 ## Player Evaluation
 
+Separation Above Expectation aids in our understanding how recievers perform relative to their peers. In the example below, you can see how Tyreek Hill, a player who is predicted to average roughly the same separation as Larry Fizgerald 
+
 <img width="900" alt="Screen Shot 2020-08-05 at 10 09 40 AM" src="https://user-images.githubusercontent.com/66449877/89442790-42df6880-d704-11ea-971b-e71fb81b564f.png">
+
+The plot above shows the differences between predicted and actual average separations of receivers with at least 175 targets in the last three seasons. 
+
+Players **above** the diagonal line excel at gaining separation relative to their predicted separation. To see the full interactive plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) 
+
 <img width="900" alt="Screen Shot 2020-08-05 at 11 18 43 AM" src="https://user-images.githubusercontent.com/66449877/89452449-84771000-d712-11ea-9d31-16f49352fdb8.png">
 
-# Main Takeaways
+## Main Takeaways
 
-   1. Separation Differential is a **better predictor of team success** than Separation
-       - Separation Differential has a 0.66 correlation to Win % vs .48 for Avg Separation
-   2. **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** some of the best route-runners/separation-getters in the NFL.
+   1. Separation Above Expectation is a **better predictor of team success** than Separation alone
+       - Separation Above Expectation has a 0.66 correlation to Team Win % vs .48 for Avg Separation since 2017
+   2. **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** lead the pack when it comes to comparing the best route-runners/separation-getters in the NFL.
    3. Compare receviers **within clusters**, and select for positive expected separation differentials
        - From a team-building perspective, you cannot replace Antonio Brown with JuJu Smith-Schuster (as we all saw). Players with different body types and abilities have different team roles, and need to be accounted for when building a receiving corps. 
        
