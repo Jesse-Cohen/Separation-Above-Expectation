@@ -82,7 +82,8 @@ To see an interactive version of this plot, please visit the my [Results Noteboo
 
    1. Separation Above Expectation is a **better predictor of team success** than Separation
        - Separation Above Expectation has a 0.66 correlation to Win % vs .48 for Avg Separation
-   2. Receiver Separation must be compared holistically by controlling for factors like depth of target, pre-snap cushion, and nearest defender
+   2. Receiver Separation fails to account for in-play circumstances, and should be supplemented with Separation Above Expectation
+       - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, Separation becomes more insightful
        - **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** some of the best route-runners/separation-getters in the NFL.
    3. Compare receviers **within clusters**, and select for positive Separation Above Expectation
        - From a team-building perspective, you cannot replace Antonio Brown with JuJu Smith-Schuster (as we all saw). Players with different body types and abilities have different team roles, and need to be accounted for when building a receiving corps. 
