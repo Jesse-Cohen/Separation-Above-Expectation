@@ -22,6 +22,6 @@ The first iteration of our training set left us with ~30 features to help with p
   4. **Time to Throw** - How long from the time of snap did the QB take to pass the ball (seconds)
   5. **Air Time** - How long the pass took to reach its targeted recevier (seconds)
 
-![image](https://user-images.githubusercontent.com/66449877/88740284-998be780-d0f1-11ea-9ef9-e9d041b78f0b.png)
+<img width="780" alt="Screen Shot 2020-08-05 at 10 04 59 AM" src="https://user-images.githubusercontent.com/66449877/89442771-3d821e00-d704-11ea-9ec2-4d57d9f6fb7d.png">
 
-![image](https://user-images.githubusercontent.com/66449877/88740020-e9b67a00-d0f0-11ea-96b2-07f27c29645f.png)
+<img width="962" alt="Screen Shot 2020-08-05 at 10 09 40 AM" src="https://user-images.githubusercontent.com/66449877/89442790-42df6880-d704-11ea-971b-e71fb81b564f.png">
