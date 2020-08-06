@@ -16,14 +16,14 @@ By accounting for things like depth of target (Air Yards), pre-snap cushion, the
 
 # Results
 
-The first iteration of our training set left us with ~30 features to help with predictions. After sifting through dozens of different feature sets I settled on using 6 features (listed below) that account for the most of the variation in predicted separation. Using a tree-based model, (light gradient boosted) the final feature list to predict receiver separation (in order of importance) are:
+The first iteration of our training set left us with ~30 features to help with predictions. After sifting through dozens of different feature sets I settled on using 5 features (listed below) that account for the most of the variance in separation. Using a tree-based model, ([light gradient boosted](https://lightgbm.readthedocs.io/en/latest/)) the final feature list to predict receiver separation (in order of importance) are:
 
    1. **Yds_Beyond_Success**
        - The vertical distance beyond the yardage deemed to be a successful play for the offense
-           - play success is defined in Feature Analysis and Engineering notebook, and is based on down and distance
+           - play success is defined in [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook, and is based on down and distance.
        - Though Air_Yds was most impactful feature when using *all* our features, 'Yds_beyond_success' was the most helpful in predictions in smaller feature spaces
    2. **NDP**
-       - A categorical feature with this mapping {Cornerbacks:0, Safeties+DBs:1, Linebackers:2, Defenseive Linemen:3}
+       - A categorical feature with this mapping {Cornerbacks:0, Safeties+DBs:1, Defenseive Linemen:2, Linebackers:3}
    3. **Cushion**
        - The distance (in yds) from the defender lined up across from the targeted receiver at the time of ball snap
    4. **Air Time**
@@ -37,11 +37,11 @@ The first iteration of our training set left us with ~30 features to help with p
 
 Below are two contrasting examples to show how the features combine to create predictions.
 
-<img width="1050" alt="Screen Shot 2020-08-05 at 11 16 23 AM" src="https://user-images.githubusercontent.com/66449877/89449113-7b377480-d70d-11ea-9ba7-868e7a7c16bf.png">
+<img width="1050" alt="Screen Shot 2020-08-06 at 4 43 53 PM" src="https://user-images.githubusercontent.com/66449877/89593485-24609680-d804-11ea-83fe-a02d6fca4e4d.png">
 
-On the above play, the model predicted that the player would have a **separation of 1.5 yards**, 1.4 yards less than the baseline prediction of ~2.9 yards. 
+On the above play, the model predicted that the player would have a **separation of 1.5 yards**, -1.4 yards from the baseline prediction of 2.9 yards. 
 
-On this play the pass traveled 35 yards *beyond* the marker for a successful play, it was in the air for 2.5 seconds, and the receiver was defended by a CB at the time the pass arrived (NDP = 0), all factors that would lead us to believe it would have a smaller separation. 
+On this play the pass traveled 35 yards *beyond* the marker for a successful play, it was in the air for 2.5 seconds, and the receiver was defended by a CB at the time the pass arrived (NDP = 0), all factors that would lead us to believe the receiver should have a smaller separation. 
 
 On the play, the player had an **actual separation of 1.3 yards**. 
 
