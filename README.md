@@ -45,8 +45,8 @@ On this play the pass traveled 35 yards *beyond* the marker for a successful pla
 
 On the play, the player had an **actual separation of 1.3 yards**. 
 
-<img width="1050" alt="Screen Shot 2020-08-05 at 11 17 26 AM" src="https://user-images.githubusercontent.com/66449877/89449108-78d51a80-d70d-11ea-9caa-89e22b4fe210.png">
-       
+<img width="1050" alt="Screen Shot 2020-08-06 at 4 49 54 PM" src="https://user-images.githubusercontent.com/66449877/89593808-f6c81d00-d804-11ea-848e-ef421ea33002.png"> 
+
 On this play, the model said that the player would have a **predicted separation of 7.5 yards**, +4.6 yards greater than the baseline of 2.9 yards. 
 
 This was due mostly to the fact that the pass targeted a receiver that was 22 yards *behind* what was considered a success on the play (this was most likely a screen pass). The receiver also had a massive 12.5 yards of pre-snap cushion and was defended by a LB (NDP = 2) as the nearest defender when the pass arrived. 
