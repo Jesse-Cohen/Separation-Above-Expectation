@@ -69,7 +69,7 @@ Yes, that is true, but receiver separation above expectation is actually a **bet
 
 ## Player Evaluation
 
-<img width="900" alt="Screen Shot 2020-08-05 at 4 09 16 PM" src="https://user-images.githubusercontent.com/66449877/89472777-09275580-d736-11ea-8f43-bb5255b78c47.png">
+<img width="900" alt="Screen Shot 2020-08-07 at 9 46 16 AM" src="https://user-images.githubusercontent.com/66449877/89668787-35a4b400-d893-11ea-9349-b033d9bb4c46.png">
 
 The plot above shows the differences between predicted and actual average separations of receivers with at least 175 targets in the last three seasons. 
 
