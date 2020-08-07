@@ -6,7 +6,7 @@ The goal of this project is to predict an NFL receiver's separation at the time 
 
 Receiver Separation is NOT built equal.
 
-<img width="900" alt="Screen Shot 2020-08-05 at 3 41 07 PM" src="https://user-images.githubusercontent.com/66449877/89471095-1b9f9000-d732-11ea-9a27-aa6fe53dc3cd.png">
+<img width="900" alt="Screen Shot 2020-08-07 at 10 20 56 AM" src="https://user-images.githubusercontent.com/66449877/89671379-b9f93600-d897-11ea-80bc-27a92aeaaa61.png">
 
 In the chart above, we can see how players like **DeSean Jackson** (2.8) and **Golden Tate** (2.7) have nearly identical average separation, but their average depths of target are on opposite ends of the spectrum. If you were comparing these two receivers on separation alone, it would appear appropriate to claim that they gain separation at similar rates. This is clearly flawed, though, as we can see that deeper targets warrant less separation, so Jackson's 2.8 yards of average separation is actually significantly more impressive than Tate's 2.7 yards. 
 
