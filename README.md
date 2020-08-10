@@ -1,10 +1,10 @@
 ## Goal
 
-The goal of this project is to predict an NFL receiver's separation at the time of pass arrives. I will be using the NFL's player-tracking data set from the last 3 seasons (2017-2019) to create these predictions.
+The NFL currently uses player-tracking data to create measurements of performance over time. One of those measurements is receiver separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
+
+While receiver separation does a good job of describing a specific play, it fails to capture the receiver's contribution to the play. In order to understand a receiver's contribution, we must compare their actual performance to their predicted performance. The goal of this project was to create that prediction.
 
 ## Motivation
-
-Receiver Separation is NOT built equal.
 
 <img width="900" alt="Screen Shot 2020-08-07 at 10 20 56 AM" src="https://user-images.githubusercontent.com/66449877/89671379-b9f93600-d897-11ea-80bc-27a92aeaaa61.png">
 
@@ -15,6 +15,8 @@ How much more impressive is it?  Well, that's where predicted separation comes i
 By accounting for things like depth of target (Air Yards), pre-snap cushion, the position of the nearest defender, *predicted separation* will aid in accounting for the per-play differences and help create a more comprehensive understanding of receiver separation. When aggregated over a course of a game, season, or career, this *predicted separation* value will bring context into the players TRUE ability to separate given their in-play circumstances as well as giving descriptive context into the situations a certain receiver sees. 
 
 # Results
+
+Using the NFL's player-tracking data from the last 3 seasons (2017-2019), I created a model that predicts receiver separation based on 5 features.
 
 The first iteration of our training set left us with ~30 features to help with predictions. After sifting through dozens of different feature sets I settled on using 5 features (listed below) that account for the most of the variance in separation. Using a tree-based model, ([light gradient boosted](https://lightgbm.readthedocs.io/en/latest/)) the final feature list to predict receiver separation (in order of importance) are:
 
