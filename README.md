@@ -6,7 +6,7 @@ While receiver separation does a good job of describing a specific play, it fail
 
 ## Results
 
-<img width="900" alt="Screen Shot 2020-08-07 at 9 46 16 AM" src="https://user-images.githubusercontent.com/66449877/89668787-35a4b400-d893-11ea-9349-b033d9bb4c46.png">
+<img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
 Using the NFL's player-tracking data from the last 3 seasons (2017-2019), the plot above shows the differences between predicted separation and actual average separation (min. 175 targets). 
 
@@ -71,7 +71,7 @@ I know what you are thinking...
 
 Yes, that is true, but receiver separation above expectation is a **better predictor** of team success than average separation. Below is a linear correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
 
-<img width="700" alt="Screen Shot 2020-08-05 at 11 48 26 AM" src="https://user-images.githubusercontent.com/66449877/89453158-a6bd5d80-d713-11ea-9dce-d2313a892539.png">
+<img width="700" alt="CorrVals" src="https://user-images.githubusercontent.com/66449877/89859139-25bbf700-db55-11ea-9b37-fda3af201de1.png">
 
 ## Main Takeaways
 
