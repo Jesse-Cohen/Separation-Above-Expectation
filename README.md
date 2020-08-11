@@ -4,21 +4,25 @@ The NFL currently uses player-tracking data to create measurements of performanc
 
 While receiver separation does a good job of describing a specific play, it fails to capture the receiver's contribution to the play. In order to understand a receiver's contribution, we must compare their actual performance to their predicted performance. The goal of this project was to create that prediction.
 
-## Motivation
+## Results
+
+<img width="900" alt="Screen Shot 2020-08-07 at 9 46 16 AM" src="https://user-images.githubusercontent.com/66449877/89668787-35a4b400-d893-11ea-9349-b033d9bb4c46.png">
+
+Using the NFL's player-tracking data from the last 3 seasons (2017-2019), the plot above shows the differences between predicted separation and actual average separation (min. 175 targets). 
+
+The vertical distance **above the diagonal line** represents *Separation Above Expectation*. We can see how DeSean Jackson's 2.7 yards of actual separation is actually +0.3 yards above expectation, while Golden Tate's 2.8 yards of separation is -0.5 yards above (or .5 yards below) expectation. 
+
+To see an interactive version of this plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) for more info. 
 
 <img width="900" alt="Screen Shot 2020-08-07 at 10 20 56 AM" src="https://user-images.githubusercontent.com/66449877/89671379-b9f93600-d897-11ea-80bc-27a92aeaaa61.png">
 
-In the chart above, we can see how players like **DeSean Jackson** (2.8) and **Golden Tate** (2.7) have nearly identical average separation, but their average depths of target are on opposite ends of the spectrum. If you were comparing these two receivers on separation alone, it would appear appropriate to claim that they gain separation at similar rates. This is clearly flawed, though, as we can see that deeper targets warrant less separation, so Jackson's 2.8 yards of average separation is actually significantly more impressive than Tate's 2.7 yards. 
+As we can see in the plot above, deeper targets create less separation. Without this, we would be left with the notion that Golden Tate and DeSean Jackson create separation at the same rate, when in fact, Jackson's 2.7 yards of average separation is actually significantly more impressive than Tate's 2.7 yards. 
 
-How much more impressive is it?  Well, that's where predicted separation comes in.
+### Model
 
-By accounting for things like depth of target (Air Yards), pre-snap cushion, the position of the nearest defender, *predicted separation* will aid in accounting for the per-play differences and help create a more comprehensive understanding of receiver separation. When aggregated over a course of a game, season, or career, this *predicted separation* value will bring context into the players TRUE ability to separate given their in-play circumstances as well as giving descriptive context into the situations a certain receiver sees. 
+By accounting for things like depth of target (Air Yards), pre-snap cushion, the position of the nearest defender, *predicted separation* aids in accounting for the per-play differences to help create a more comprehensive understanding of receiver separation. When aggregated over a course of a game, season, or career, this *predicted separation* value will bring context into the players TRUE ability to separate.
 
-# Results
-
-Using the NFL's player-tracking data from the last 3 seasons (2017-2019), I created a model that predicts receiver separation based on 5 features.
-
-The first iteration of our training set left us with ~30 features to help with predictions. After sifting through dozens of different feature sets I settled on using 5 features (listed below) that account for the most of the variance in separation. Using a tree-based model, ([light gradient boosted](https://lightgbm.readthedocs.io/en/latest/)) the final feature list to predict receiver separation (in order of importance) are:
+Starting with ~30 features, I iterated through dozens of different feature sets, finally settling with the 5 features (listed below) that account for the most of the variance in separation. Using a tree-based model, ([light gradient boosted](https://lightgbm.readthedocs.io/en/latest/)) the final feature list to predict receiver separation (in order of importance) are:
 
    1. **Yds_Beyond_Success**
        - The vertical distance beyond the yardage deemed to be a successful play for the offense
@@ -55,7 +59,7 @@ This was due mostly to the fact that the pass targeted a receiver that was 22 ya
 
 On the play, the player had an **actual separation of 6.7 yards**.
 
-## Why should you care?
+## Applications
 
 Below is a scatter plot showing how correlated **receiver separation above expectation** is to **team win percentage** over the last three seasons. 
 
@@ -65,20 +69,9 @@ I know what you are thinking...
 
 >"*of course receiver separation is a good thing, teams that have more separation should win more!*"
 
-Yes, that is true, but receiver separation above expectation is actually a **better predictor** of team success than average separation. Below is a correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
+Yes, that is true, but receiver separation above expectation is a **better predictor** of team success than average separation. Below is a correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
 
 <img width="700" alt="Screen Shot 2020-08-05 at 11 48 26 AM" src="https://user-images.githubusercontent.com/66449877/89453158-a6bd5d80-d713-11ea-9dce-d2313a892539.png">
-
-## Player Evaluation
-
-<img width="900" alt="Screen Shot 2020-08-07 at 9 46 16 AM" src="https://user-images.githubusercontent.com/66449877/89668787-35a4b400-d893-11ea-9349-b033d9bb4c46.png">
-
-The plot above shows the differences between predicted and actual average separations of receivers with at least 175 targets in the last three seasons. 
-
-The vertical distance **above the diagonal line** represents Separation Above Expectation, and we can now see more clearly how DeSean Jackson's 2.7 yards of separation is actually +0.3 yards above expectation, while Golden Tate's 2.7 yards of separation is -0.5 yards above (or .5 yards below) expectation. 
-
-To see an interactive version of this plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) for more info. 
-
 
 ## Main Takeaways
 
