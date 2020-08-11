@@ -1,6 +1,6 @@
 ## Goal
 
-The NFL currently uses player-tracking data to create measurements of performance over time. One of those measurements is receiver separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
+The NFL currently uses player-tracking data that measures performance over time. One of those measurements is receiver separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
 
 While receiver separation does a good job of describing a specific play, it fails to capture the receiver's contribution to the play. In order to understand a receiver's contribution, we must compare their actual performance to their predicted performance. The goal of this project was to create that prediction.
 
@@ -26,7 +26,7 @@ Starting with ~30 features, I iterated through dozens of different feature sets,
 
    1. **Yds_Beyond_Success**
        - The vertical distance beyond the yardage deemed to be a successful play for the offense
-           - play success is defined in [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook, and is based on down and distance.
+           - play success is defined in the [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook and is based on down and distance.
        - Though Air_Yds was most impactful feature when using *all* our features, 'Yds_beyond_success' was the most helpful in predictions in smaller feature spaces
    2. **NDP**
        - A categorical feature with this mapping {Cornerbacks:0, Safeties+DBs:1, Defenseive Linemen:2, Linebackers:3}
@@ -69,19 +69,17 @@ I know what you are thinking...
 
 >"*of course receiver separation is a good thing, teams that have more separation should win more!*"
 
-Yes, that is true, but receiver separation above expectation is a **better predictor** of team success than average separation. Below is a correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
+Yes, that is true, but receiver separation above expectation is a **better predictor** of team success than average separation. Below is a linear correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
 
 <img width="700" alt="Screen Shot 2020-08-05 at 11 48 26 AM" src="https://user-images.githubusercontent.com/66449877/89453158-a6bd5d80-d713-11ea-9dce-d2313a892539.png">
 
 ## Main Takeaways
 
-   1. Separation Above Expectation is a **better predictor of team success** than Separation
-       - Separation Above Expectation has a 0.66 correlation to Win % vs .48 for Avg Separation
-   2. Receiver Separation fails to account for in-play circumstances, and should be supplemented with Separation Above Expectation
-       - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, Separation becomes more insightful
+   1. Separation Above Expectation is a better evaluator of player performance than separation alone
+       - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, separation becomes more insightful in player evaluation
        - **Tyreek Hill, Davante Adams, Cooper Kupp, and Tyler Lockett** some of the best route-runners/separation-getters in the NFL.
-   3. Compare receviers **within clusters**, and select for positive Separation Above Expectation
-       - From a team-building perspective, you cannot replace Antonio Brown with JuJu Smith-Schuster (as we all saw). Players with different body types and abilities have different team roles, and need to be accounted for when building a receiving corps. 
+   2. Separation Above Expectation has a **higher linear correlation to team success** than separation
+       - Separation Above Expectation has a 0.66 linear correlation to Team Win Pct vs 0.48 for average separation
        
  ## Thanks for reading!
 
