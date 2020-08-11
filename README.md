@@ -79,7 +79,6 @@ Yes, that is true, but receiver separation above expectation is a **better predi
        - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, separation becomes more insightful in player evaluation
    2. Separation Above Expectation has a **higher linear correlation to team success** than separation
        - Separation Above Expectation has a 0.66 linear correlation to Team Win Pct vs 0.48 for average separation
-       # Potential Improvements
 
 With more time/resources/data, how would I improved these predictions?
 
