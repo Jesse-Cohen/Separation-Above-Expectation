@@ -55,7 +55,7 @@ On the play, the player had an **actual separation of 1.3 yards**.
 
 On this play, the model said that the player would have a **predicted separation of 7.5 yards**, +4.6 yards greater than the baseline of 2.9 yards. 
 
-This was due mostly to the fact that the pass targeted a receiver that was 22 yards *behind* what was considered a success on the play (this was most likely a screen pass). The receiver also had a massive 12.5 yards of pre-snap cushion and was defended by a LB (NDP = 2) as the nearest defender when the pass arrived. 
+This was due mostly to the fact that the pass targeted a receiver that was 22 yards *behind* what was considered a success on the play (this was most likely a screen pass). The receiver also had a massive 12.5 yards of pre-snap cushion and was defended by a linebacker (NDP = 2) as the nearest defender when the pass arrived. 
 
 On the play, the player had an **actual separation of 6.7 yards**.
 
