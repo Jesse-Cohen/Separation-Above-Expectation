@@ -73,12 +73,27 @@ Yes, that is true, but receiver separation above expectation is a **better predi
 
 <img width="700" alt="CorrVals" src="https://user-images.githubusercontent.com/66449877/89859139-25bbf700-db55-11ea-9b37-fda3af201de1.png">
 
-## Main Takeaways
+## Takeaways and Next Steps
 
    1. Separation Above Expectation is a better evaluator of player performance than separation alone
        - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, separation becomes more insightful in player evaluation
    2. Separation Above Expectation has a **higher linear correlation to team success** than separation
        - Separation Above Expectation has a 0.66 linear correlation to Team Win Pct vs 0.48 for average separation
+       # Potential Improvements
+
+With more time/resources/data, how would I improved these predictions?
+
+   1. New Feature - Absolute Yardline
+      - Where the play starts from on the field should add predictive power
+   2. New Feature - Time Left + Score Differential 
+      - What is the game situation? Is one team down 21 points and playing catch up? Is it tied in the 4th quarter?
+   3. Create different model for each position
+       - Each position is very specialized, that's the beauty of football
+           - This model might not understand all of the nuances of separation for every position, but it can be generalized to be applied to all (non-backfield) receivers. There is always a trade-off between applicability and interpretability. If I build separate models for WRs/TEs/RBs it may be more insightful for each position group, but also inherently more complicated to understand and compare accross positions. 
+   4. Hyperparameter tuning
+      - In the Light Gradient Boosted Model, hyperparameter tuning is time-consuming and computationally heavy. With more time, I would spend more time fine-tuning these paramters to create the most accurate model
+   5. Targets only
+      - This dataset only includes instances when the player was targeted, so it has limitations. If we wanted to include all routes, we would have to create a proxy for separation (perhaps at pass forward). 
        
  ## Thanks for reading!
 
