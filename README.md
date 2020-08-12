@@ -1,16 +1,20 @@
 ## Goal
 
-The NFL currently uses spatiotemporal tracking to measure player performance over time. One of those player measurements is receiver separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
+The NFL currently uses spatiotemporal tracking to measure player performance over time. One of those measurements is Receiver Separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
 
-While receiver separation does a good job of describing player tendencies, it fails to capture the receiver's contribution to that separation. In order to truly understand a receiver's contribution to their separation, we must compare their actual separation to their predicted separation. The goal of this project was to create that prediction.
+While Receiver Separation is helpful in describing specific plays, it fails to capture the receiver's contribution to those plays. In order to truly understand a receiver's contribution, we must compare their actual separation (Receiver Separation) to their predicted separation. The goal of this project was to create that prediction.
 
 ## Results
 
 <img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
-Using the NFL's player-tracking data from the last 3 seasons (2017-2019), the plot above shows the differences between predicted separation and actual average separation (min. 175 targets). 
+Using data from the last 3 seasons (2017-2019), the plot above shows the differences between actual separation (Receiver Separation) and predicted separation (min. 175 targets). 
 
-The vertical distance **above the diagonal line** represents *Separation Above Expectation*. We can see how DeSean Jackson's 2.77 yards of actual separation is actually +0.26 yards above expectation, while Golden Tate's 2.66 yards of separation is -0.51 yards above (or 0.51 yards below) expectation. 
+The vertical distance **above** the diagonal line represents *Separation Above Expectation*. We can see how DeSean Jackson's 2.77 yards of actual separation is actually +0.26 yards above expectation, while Golden Tate's 2.66 yards of separation is -0.51 yards above (or 0.51 yards below) expectation. 
+
+
+   1. Separation Above Expectation is a better evaluator of player performance than separation alone
+       - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, separation becomes more insightful in player evaluation
 
 To see an interactive version of this plot, please visit the my [Results Notebook](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb) for more info. 
 
@@ -71,15 +75,13 @@ I know what you are thinking...
 
 Yes, that is true, but receiver separation above expectation is a **better predictor** of team success than average separation. Below is a linear correlation matrix to show how receiever separation above expectation and actual separation compare to team success.
 
-<img width="700" alt="CorrVals" src="https://user-images.githubusercontent.com/66449877/89859139-25bbf700-db55-11ea-9b37-fda3af201de1.png">
-
-## Takeaways and Next Steps
-
-   1. Separation Above Expectation is a better evaluator of player performance than separation alone
-       - Controlling for factors like depth of target, pre-snap cushion, and nearest defender, separation becomes more insightful in player evaluation
-   2. Separation Above Expectation has a **higher linear correlation to team success** than separation
+ 2. Separation Above Expectation has a **higher linear correlation to team success** than separation
        - Separation Above Expectation has a 0.66 linear correlation to Team Win Pct vs 0.48 for average separation
 
+<img width="700" alt="CorrVals" src="https://user-images.githubusercontent.com/66449877/89859139-25bbf700-db55-11ea-9b37-fda3af201de1.png">
+
+## Next Steps
+ 
 With more time/resources/data, how would I improved these predictions?
 
    1. New Feature - Absolute Yardline
