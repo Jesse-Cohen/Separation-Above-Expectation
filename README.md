@@ -1,10 +1,27 @@
 ## Goal
 
-The NFL currently uses spatiotemporal tracking to measure player performance over time. One of those measurements is Receiver Separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender. 
+The NFL currently uses spatiotemporal tracking to measure player performance over time. One of those measurements is Receiver Separation. Collected at the time a pass arrives, receiver separation measures the distance (in yards) from the receiver to their nearest defender.
 
 While Receiver Separation is helpful in describing specific plays, it fails to capture the receiver's contribution to those plays. In order to truly understand a receiver's contribution, we must compare their actual separation (Receiver Separation) to their predicted separation. The goal of this project was to create that prediction.
 
 ## Results
+
+Starting with ~30 features, I iterated through dozens of different feature sets, finally settling with the 5 features (listed below) that account for the most of the variance in separation. Using a tree-based model, ([light gradient boosted](https://lightgbm.readthedocs.io/en/latest/)) the final feature list to predict receiver separation (in order of importance) are:
+
+   1. **Yds_Beyond_Success**
+       - The vertical distance beyond the yardage deemed to be a successful play for the offense
+           - play success is defined in the [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook and is based on down and distance.
+       - Though Air_Yds was most impactful feature when using *all* our features, 'Yds_beyond_success' was the most helpful in predictions in smaller feature spaces
+   2. **NDP**
+       - Position of the nearest defender: A categorical feature with this mapping {Cornerbacks:0, Safeties+DBs:1, Defenseive Linemen:2, Linebackers:3}
+   3. **Cushion**
+       - The distance (in yds) from the defender lined up across from the targeted receiver at the time of ball snap
+   4. **Air Time**
+       - The time (in seconds) it takes for a pass to travel in the air from launch to when it reaches the targeted recevier
+   5. **Endzone Distance**
+       - The distance (in yds) from where the recevier is targeted to the back of the endzone in the direction the team is facing
+       
+<img width="700" alt="Screen Shot 2020-08-05 at 11 15 54 AM" src="https://user-images.githubusercontent.com/66449877/89449122-7d99ce80-d70d-11ea-9663-567ca04cd9b8.png"> 
 
 <img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
