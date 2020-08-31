@@ -10,7 +10,7 @@ Before I could create *Separation Above Expectation*, I had to create *Predicted
 
 To predict a measurement like *Receiver Separation* in a given play, I looked at a combination of other measurements ("features") within that play. By comparing features like how close the nearest defender was at the start of a play or how long the ball was in the air during a play, we can predict how much separation a receiver typically gets in a similar play. 
 
-Starting with 22 features in 43,559 plays from 2017-2019, I iterated through dozens of combinations to find the 5 features (listed below) that create the simplest and most accurate model of *Predicted Separation*.* In order of importance, those features are:
+Starting with 22 features in 43,559 plays from 2017-2019, I iterated through dozens of combinations to find the 5 features (listed below) that create the simplest and most accurate model of *Predicted Separation*. In order of importance, those features are:
 
 1. *Yards Beyond Success*
 
