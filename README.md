@@ -14,7 +14,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 1. *Yards Beyond Success*
 
-    * The distance (in yds) beyond the success yardline. Defined in the [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook, the success yardline of a play is based on down and distance.
+    * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb)**.
 
 2. *Nearest Defender Position*
 
@@ -42,11 +42,13 @@ The plot below shows *Separation Above Expectation* for 72 receivers with a mini
 
 <img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
-> _(To see an interactive version of this plot, visit **[Result](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb))**_
+> _(To see an interactive version of this plot, visit **[Results](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb))**_
 
 From 2017 to 2019, DeSean Jackson averaged 2.77 yards of *Reciever Separation* while Golden Tate averaged a similar 2.66 yards. Using *Separation Above Expectation* we can see that Jackson’s 2.77 yards of average separation was +0.26 yards above expectation, while Tate's 2.66 yards of average separation was -0.51 yards above (or 0.51 yards below) expectation.
 
-So, if Jackson and Tate have similar average *Receiver Separation*, but drastically different *Separation Above Expectation*, why are their average *Predicted Separations* so different? The table below illustrates this difference, showing the average value of each of the factors that go into creating their average *Predicted Separation*. We can see how Jackson’s average *Yards Beyond Success* (12.27) is more than 10 yards further downfield than Tates (1.37). This shows how Jackson’s targets are, on average, far more threatening to opposing defenses, and therefore warrant a lower average *Predicted Separation*. 
+If Jackson and Tate have similar average *Receiver Separation*, but drastically different *Separation Above Expectation*, why are their average *Predicted Separations* so different? 
+
+The table below illustrates this difference, showing the average value of each of the factors that go into creating their average *Predicted Separation*. We can see how Jackson’s average *Yards Beyond Success* (12.27) is more than 10 yards further downfield than Tates (1.37). This shows how Jackson’s targets are, on average, far more threatening to opposing defenses, and therefore warrant a lower average *Predicted Separation*. 
 
 <img width="500" alt="Screen Shot 2020-08-31 at 12 48 10 PM" src="https://user-images.githubusercontent.com/66449877/91764867-dfbee580-eb8c-11ea-82ae-64ad29a4c685.png">
 
