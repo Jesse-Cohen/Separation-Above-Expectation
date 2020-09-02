@@ -14,7 +14,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 1. *Yards Beyond Success*
 
-    * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb)**.
+    * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Separation-Above-Expectation/blob/gh-pages/Feature_Analysis_and_Engineering.ipynb)**.
 
 2. *Nearest Defender Position*
 
