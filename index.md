@@ -1,3 +1,5 @@
+By: Jesse Cohen
+
 ## **Goal**
 
 The NFL uses spatiotemporal tracking data to measure player movement on the field at any given time. One of those measurements is *Receiver Separation*. Collected at the time a pass arrives, *Receiver Separation* measures the distance (in yards) from the receiver to their nearest defender.
@@ -32,7 +34,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
     * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.
 
-> _(To see process of creating this model in detail, visit ***[Model Selection and Tuning](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Model_Selection_and_Tuning.ipynb))***_
+> _(To see process of creating this model in detail, visit ***[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))***_
 
 ## **Results**
 
@@ -40,7 +42,7 @@ Using measurements of *Predicted Separation* (from the model described above) an
 
 The plot below shows *Separation Above Expectation* for 72 receivers with a minimum of 175 targets from 2017 - 2019. The vertical distance away from the diagonal line represents their *Separation Above Expectation*. 
 
-> _(To see an interactive version of this plot, visit **[Results](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Results.ipynb))**_
+> _(To see an interactive version of this plot, visit **[Results](./Notebooks/Results.html))**_
 
 <img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
@@ -91,3 +93,9 @@ With more time, resources and data, here’s how I would improve my predictions 
 ## **Thanks for reading!**
 
 Feel free to reach out at JesseDCohen@gmail.com with any questions, suggestions, or feedback.
+
+For a more in-depth look at the cleaning, analysis, and modeling process, here is code below:
+1. **[Data Cleaning](./Notebooks/Data_Cleaning.html)**
+2. **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**
+3. **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html)**
+4. **[Results](./Notebooks/Results.html)**
