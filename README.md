@@ -86,8 +86,8 @@ With more time, resources and data, here’s how I would improve my predictions 
 
 4. Expand to include all routes
 
-    * This dataset only includes instances when the player was targeted, so it doesn’t measure separation on all routes. If we wanted a more inclusive measurement of separation, we would have to create a proxy feature  (like at pass forward).
+    * This dataset only includes instances when the player was targeted, so it doesn’t measure separation on all routes. If we wanted a more inclusive measurement of separation, we would have to create proxy features for routes that weren't targeted (like *Separation at Pass Forward*).
 
 ## **Thanks for reading!**
 
-Thank you all for reading. If you have any questions, suggestions, or any feedback at all, feel free to reach out at JesseDCohen@gmail.com.
+Feel free to reach out at JesseDCohen@gmail.com with any questions, suggestions, or feedback.
