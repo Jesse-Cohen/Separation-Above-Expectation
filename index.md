@@ -68,7 +68,7 @@ The scatter plot below shows that over the last three seasons, *Separation Above
 
 While you may be thinking, "*Of course, receiver separation is a good thing! Teams that generate more separation should win more!*" the correlation matrix below shows that *Separation Above Expectation* is actually a better predictor of team success than *Receiver Separation*. 
 
-<img width="700" alt="Screen Shot 2020-08-31 at 2 34 38 PM" src="https://user-images.githubusercontent.com/66449877/91771146-5234c300-eb97-11ea-890c-0d9504d34712.png">
+<img width="700" alt="Screen Shot 2020-09-02 at 2 24 56 PM" src="https://user-images.githubusercontent.com/66449877/92038465-49bfc200-ed28-11ea-9cd4-93e4724c123e.png">
 
 ## **Next Steps**
 
