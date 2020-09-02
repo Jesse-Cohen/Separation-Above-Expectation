@@ -14,7 +14,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 1. *Yards Beyond Success*
 
-    * The distance (in yds) beyond the success yardline (defined in the [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook, the success yardline of a play is based on down and distance).
+    * The distance (in yds) beyond the success yardline. Defined in the [Feature Analysis and Engineering](https://github.com/Jesse-Cohen/Expected-Receiver-Separation/blob/master/Notebooks/Feature_Analysis_and_Engineering.ipynb) notebook, the success yardline of a play is based on down and distance.
 
 2. *Nearest Defender Position*
 
