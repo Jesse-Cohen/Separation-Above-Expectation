@@ -62,7 +62,9 @@ While Jackson and Tate appear to be equally good at getting open when looking at
 
 ## **Bonus Applications** 
 
-*Separation Above Expectation* can also be used to predict team success. The scatter plot below shows that over the last three seasons, *Separation Above Expectation* is strongly correlated to team win percentage. 
+*Separation Above Expectation* can also be used to predict team success. 
+
+The scatter plot below shows that over the last three seasons, *Separation Above Expectation* is strongly correlated to team win percentage. 
 
 <img width="900" alt="Screen Shot 2020-08-05 at 10 04 59 AM" src="https://user-images.githubusercontent.com/66449877/89442771-3d821e00-d704-11ea-9ec2-4d57d9f6fb7d.png">
 
