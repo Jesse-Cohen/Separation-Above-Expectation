@@ -94,7 +94,7 @@ With more time, resources and data, here’s how I would improve my predictions 
 
 ## **Process Documentation**
 
-For a more in-depth look at the cleaning, analysis, and modeling process, here is code below:
+For a more in-depth look at the data cleaning, analysis, and modeling process:
 
 1. **[Data Cleaning](./Notebooks/Data_Cleaning.html)**
 2. **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**
