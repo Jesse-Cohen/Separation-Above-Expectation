@@ -1,6 +1,6 @@
 **Jesse Cohen**
 
-Sep 1, 2020
+September 1, 2020
 
 ## **Goal**
 
