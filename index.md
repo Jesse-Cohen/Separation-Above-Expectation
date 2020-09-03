@@ -1,4 +1,6 @@
-By: Jesse Cohen
+**Jesse Cohen**
+
+Sep 1, 2020
 
 ## **Goal**
 
@@ -90,11 +92,10 @@ With more time, resources and data, here’s how I would improve my predictions 
 
     * This dataset only includes instances when the player was targeted, so it doesn’t measure separation on all routes. If we wanted a more inclusive measurement of separation, we would have to create proxy features for routes that weren't targeted (like *Separation at Pass Forward*).
 
-## **Thanks for reading!**
-
-Feel free to reach out at JesseDCohen@gmail.com with any questions, suggestions, or feedback.
+## **Process Documentation**
 
 For a more in-depth look at the cleaning, analysis, and modeling process, here is code below:
+
 1. **[Data Cleaning](./Notebooks/Data_Cleaning.html)**
 2. **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**
 3. **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html)**
