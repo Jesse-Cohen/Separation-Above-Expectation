@@ -62,13 +62,11 @@ While Jackson and Tate appear to be equally good at getting open when looking at
 
 ## **Bonus Applications** 
 
-Because a receiver’s performance is directly tied to a team’s performance, *Separation Above Expectation* can also be used to predict team success.
-
-The scatter plot below shows that over the last three seasons, *Separation Above Expectation* is strongly correlated to team win percentage.
+*Separation Above Expectation* can also be used to predict team success. The scatter plot below shows that over the last three seasons, *Separation Above Expectation* is strongly correlated to team win percentage. 
 
 <img width="900" alt="Screen Shot 2020-08-05 at 10 04 59 AM" src="https://user-images.githubusercontent.com/66449877/89442771-3d821e00-d704-11ea-9ec2-4d57d9f6fb7d.png">
 
-While you may be thinking, "*Of course, receiver separation is a good thing! Teams that generate more separation should win more!*" the correlation matrix below shows that *Separation Above Expectation* is actually a better predictor of team success than *Receiver Separation*. 
+While you may be thinking, "*Of course, separation is a good thing! Teams that generate more separation should win more!*" the correlation matrix below shows that *Separation Above Expectation* is actually a better predictor of team success than *Receiver Separation* alone. 
 
 <img width="700" alt="Screen Shot 2020-09-02 at 2 24 56 PM" src="https://user-images.githubusercontent.com/66449877/92038465-49bfc200-ed28-11ea-9cd4-93e4724c123e.png">
 
