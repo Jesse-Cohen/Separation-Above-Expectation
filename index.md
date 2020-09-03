@@ -2,7 +2,8 @@
 
 For questions, suggestions, or feedback, reach out to me at [JesseDCohen@gmail.com](mailto:JesseDCohen@gmail.com).
 
-## **Goal**
+## **Goal** <br />
+
 
 The NFL uses spatiotemporal tracking data to measure player movement on the field at any given time. One of those measurements is *Receiver Separation*. Collected at the time a pass arrives, *Receiver Separation* measures the distance (in yards) from the receiver to their nearest defender.
 
