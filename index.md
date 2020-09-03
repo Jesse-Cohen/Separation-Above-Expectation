@@ -34,9 +34,9 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 5. *Endzone Distance*
 
-    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.\
+    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.  
 
-> _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_\
+> _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_  
 
 ## **Results**    
 
