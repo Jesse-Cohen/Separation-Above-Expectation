@@ -2,8 +2,7 @@
 
 For questions, suggestions, or feedback, reach out to me at [JesseDCohen@gmail.com](mailto:JesseDCohen@gmail.com).
 
-## **Goal**  
-
+## **Goal**
 
 The NFL uses spatiotemporal tracking data to measure player movement on the field at any given time. One of those measurements is *Receiver Separation*. Collected at the time a pass arrives, *Receiver Separation* measures the distance (in yards) from the receiver to their nearest defender.
 
@@ -35,9 +34,9 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 5. *Endzone Distance*
 
-    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.  
+    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.\
 
-> _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_
+> _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_\
 
 ## **Results**    
 
