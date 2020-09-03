@@ -58,7 +58,7 @@ The table below illustrates this difference, showing the average values of each 
 
 While most of their stats are similar, Jackson’s average *Yards Beyond Success* (12.27) was more than 10 yards further downfield that Tate's (1.37). This indicates that Jackson was more of a threat, so opposing defenses should have made it more difficult for him to gain separation. 
 
-While Jackson and Tate appear to have been equally good at getting open when looking at *Receiver Separation* alone, *Separation Above Expectation* shows that because Jackson faced more difficult situations, his performance was, in fact, better than Tate’s. 
+While Jackson and Tate appear to be equally good at getting open when looking at *Receiver Separation* alone, *Separation Above Expectation* shows that because Jackson faced more difficult situations, his performance was, in fact, considerably better than Tate’s. 
 
 ## **Bonus Applications** 
 
