@@ -1,4 +1,4 @@
-![Project1](https://user-images.githubusercontent.com/66449877/92149481-edfe4300-edd2-11ea-8d65-6b1f760a09ee.png=250x)
+<img src="https://user-images.githubusercontent.com/66449877/92149481-edfe4300-edd2-11ea-8d65-6b1f760a09ee.png" alt="drawing" width="400"/>
 
 For questions, suggestions, or feedback, reach out to me at [JesseDCohen@gmail.com](mailto:JesseDCohen@gmail.com).
 
