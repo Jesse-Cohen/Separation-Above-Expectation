@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/66449877/92149481-edfe4300-edd2-11ea-8d65-6b1f760a09ee.png" alt="drawing" width="230"/>
+<img src="https://user-images.githubusercontent.com/66449877/92156065-42a6bb80-eddd-11ea-9906-930dbfa7e5f1.JPG" alt="drawing" width="235"/>
 
 For questions, suggestions, or feedback, reach out to me at [JesseDCohen@gmail.com](mailto:JesseDCohen@gmail.com).
 
