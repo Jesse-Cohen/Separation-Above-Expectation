@@ -34,17 +34,17 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 5. *Endzone Distance*
 
-    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.
+    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.  
 
 > _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_
 
-## **Results**
+## **Results**    
 
 Using measurements of *Predicted Separation* (from the model described above) and *Receiver Separation* (from the NFL tracking data), we can compare how much separation a receiver is expected to get to how much they actually get. This comparison, *Separation Above Expectation*, measures the receiver's performance by exposing their ability to get open. 
 
-The plot below shows *Separation Above Expectation* for 72 receivers with a minimum of 175 targets from 2017 - 2019. The vertical distance away from the diagonal line represents their *Separation Above Expectation*. 
+The plot below shows *Separation Above Expectation* for 72 receivers with a minimum of 175 targets from 2017 - 2019. The vertical distance away from the diagonal line represents their *Separation Above Expectation*.
 
-> _(To see an interactive version of this plot, visit **[Results](./Notebooks/Results.html))**_
+> _(To see an interactive version of this plot, visit **[Results](./Notebooks/Results.html))**_.
 
 <img width="900" alt="Screen Shot 2020-08-10 at 9 56 28 PM" src="https://user-images.githubusercontent.com/66449877/89858923-a4646480-db54-11ea-9cc2-c0af7ba6ddc7.png">
 
@@ -60,7 +60,7 @@ While most of their stats are similar, Jackson’s average *Yards Beyond Success
 
 While Jackson and Tate appear to have been equally good at getting open when looking at *Receiver Separation* alone, *Separation Above Expectation* shows that because Jackson faced more difficult situations, his performance was, in fact, better than Tate’s. 
 
-## **Bonus Applications**
+## **Bonus Applications** 
 
 Because a receiver’s performance is directly tied to a team’s performance, *Separation Above Expectation* can also be used to predict team success.
 
@@ -72,7 +72,7 @@ While you may be thinking, "*Of course, receiver separation is a good thing! Tea
 
 <img width="700" alt="Screen Shot 2020-09-02 at 2 24 56 PM" src="https://user-images.githubusercontent.com/66449877/92038465-49bfc200-ed28-11ea-9cd4-93e4724c123e.png">
 
-## **Next Steps**
+## **Next Steps**     
 
 With more time, resources and data, here’s how I would improve my predictions (in order of priority):
 
@@ -92,7 +92,7 @@ With more time, resources and data, here’s how I would improve my predictions 
 
     * This dataset only includes instances when the player was targeted, so it doesn’t measure separation on all routes. If we wanted a more inclusive measurement of separation, we would have to create proxy features for routes that weren't targeted (like *Separation at Pass Forward*).
 
-## **Process Documentation**
+## **Process Documentation**  
 
 For a more in-depth look at the data cleaning, analysis, and modeling process:
 
