@@ -64,7 +64,8 @@ While most of their stats are similar, Jackson’s average *Yards Beyond Success
 While Jackson and Tate appear to be equally good at getting open when looking at *Receiver Separation* alone, *Separation Above Expectation* shows that because Jackson faced more difficult situations, his performance was, in fact, considerably better than Tate’s. 
 
 ### Top 10 Receivers in Separation Above Expectation (SAE) Since 2017
-<img width="400" alt="Screen Shot 2020-09-07 at 2 38 46 PM" src="https://user-images.githubusercontent.com/66449877/92417702-5ec99600-f118-11ea-8844-849bfe4b6e7f.png">
+
+<img width="400" alt="Screen Shot 2020-09-07 at 3 01 09 PM" src="https://user-images.githubusercontent.com/66449877/92418174-fcbe6000-f11a-11ea-97bc-b1b7f0fba369.png">
 
 ### Bottom 10 Receivers in Separation Above Expectation (SAE) Since 2017
 
