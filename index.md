@@ -20,7 +20,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
     * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**. 
     
-    * **EXAMPLE**: It's 2nd Down with 10 yards to go at the team's own 33 yardline. On 2nd down, a play needs to gain 60 percent of the yards needed to gain a first down (6 yards, in this case) to be deemed a success (source: [Football Outsiders](https://www.footballoutsiders.com/info/methods)). On the play, the receiver was targeted at their own 44 yardline, or 11 yards from the line of scrimmage. Since the *Yards to Success* was 6, and the receiver was targeted 11 yards downfield, the *Yards Beyond Success* on the play was 5 (11-6=5). 
+    * **EXAMPLE**: It's 2nd down with 10 yards to go at the team's own 33 yardline. On 2nd down, a play needs to gain 60 percent of the yards needed to gain a first down (6 yards, in this case) to be deemed a success (source: [Football Outsiders](https://www.footballoutsiders.com/info/methods)). On the play, the receiver was targeted at their own 44 yardline, or 11 yards from the line of scrimmage. Since the *Yards to Success* was 6, and the receiver was targeted 11 yards downfield, the *Yards Beyond Success* on the play was +5 yards (11-6=5). 
 
 2. *Nearest Defender Position*
 
@@ -37,7 +37,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 5. *Endzone Distance*
 
     * The straight-line distance (in yds) from where the receiver is targeted (at the time the ball arrives) to the back of the team’s scoring endzone.  
-    * **EXAMPLE**: A reciever catches the ball 6.3 yards deep into the endzone. The endzone distance for this play is 3.7.
+    * **EXAMPLE**: A reciever catches the ball 6.3 yards deep into the endzone. The endzone distance for this play is 3.7 yards.
 
 > _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_  
 
@@ -62,6 +62,14 @@ The table below illustrates this difference, showing the average values of each 
 While most of their stats are similar, Jackson’s average *Yards Beyond Success* (12.27) was more than 10 yards further downfield that Tate's (1.37). This indicates that Jackson was more of a threat, so opposing defenses should have made it more difficult for him to gain separation. 
 
 While Jackson and Tate appear to be equally good at getting open when looking at *Receiver Separation* alone, *Separation Above Expectation* shows that because Jackson faced more difficult situations, his performance was, in fact, considerably better than Tate’s. 
+
+### Top 10 Receivers in Separation Above Expectation (SAE) Since 2017
+<img width="400" alt="Screen Shot 2020-09-07 at 2 38 46 PM" src="https://user-images.githubusercontent.com/66449877/92417702-5ec99600-f118-11ea-8844-849bfe4b6e7f.png">
+
+### Bottom 10 Receivers in Separation Above Expectation (SAE) Since 2017
+
+<img width=400" alt="Screen Shot 2020-09-07 at 2 39 26 PM" src="https://user-images.githubusercontent.com/66449877/92417704-5ffac300-f118-11ea-9018-99baa79971c4.png">
+
 
 ## **Bonus Applications** 
 
