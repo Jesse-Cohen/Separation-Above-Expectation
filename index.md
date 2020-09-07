@@ -18,7 +18,9 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 1. *Yards Beyond Success*
 
-    * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**.
+    * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**. 
+    
+    * **EXAMPLE**: It's 2nd Down with 10 yards to go at the team's own 33 yardline. On 2nd down, a play needs to gain 60 percent of the yards needed to gain a first down (6 yards, in this case) to be deemed a success (source: [Football Outsiders](https://www.footballoutsiders.com/info/methods)). On the play, the receiver was targeted at their own 44 yardline, or 11 yards from the line of scrimmage. Since the *Yards to Success* was 6, and the receiver was targeted 11 yards downfield, the *Yards Beyond Success* on the play was 5 (11-6=5). 
 
 2. *Nearest Defender Position*
 
@@ -34,7 +36,8 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
 5. *Endzone Distance*
 
-    * The distance (in yds) from where the receiver is targeted to the back of the team’s scoring endzone.  
+    * The straight-line distance (in yds) from where the receiver is targeted (at the time the ball arrives) to the back of the team’s scoring endzone.  
+    * **EXAMPLE**: A reciever catches the ball 6.3 yards deep into the endzone. The endzone distance for this play is 3.7.
 
 > _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_  
 
