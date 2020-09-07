@@ -65,12 +65,10 @@ While Jackson and Tate appear to be equally good at getting open when looking at
 
 ### Top 10 Receivers in Separation Above Expectation (SAE) Since 2017
 
-<img width="400" alt="Screen Shot 2020-09-07 at 3 01 09 PM" src="https://user-images.githubusercontent.com/66449877/92418174-fcbe6000-f11a-11ea-97bc-b1b7f0fba369.png">
-
+<img width="375" alt="Screen Shot 2020-09-07 at 3 02 33 PM" src="https://user-images.githubusercontent.com/66449877/92418215-38592a00-f11b-11ea-83e3-503ed6dec90d.png">
 ### Bottom 10 Receivers in Separation Above Expectation (SAE) Since 2017
 
-<img width="400" alt="Screen Shot 2020-09-07 at 2 39 26 PM" src="https://user-images.githubusercontent.com/66449877/92417704-5ffac300-f118-11ea-9018-99baa79971c4.png">
-
+<img width="375" alt="Screen Shot 2020-09-07 at 3 02 50 PM" src="https://user-images.githubusercontent.com/66449877/92418216-3a22ed80-f11b-11ea-85c4-3aea57796d77.png">
 
 ## **Bonus Applications** 
 
