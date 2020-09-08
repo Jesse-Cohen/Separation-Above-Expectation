@@ -39,7 +39,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
     * The straight-line distance (in yds) from where the receiver is targeted (at the time the ball arrives) to the back of the team’s scoring endzone.  
     * **EXAMPLE**: A reciever catches the ball 6.3 yards deep into the endzone. The endzone distance for this play is 3.7 yards.
 
-> _(To see process of creating this model in detail, visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_  
+> _(To see the process of creating this model, how the model works, and examples, please visit **[Model Selection and Tuning](./Notebooks/Model_Selection_and_Tuning.html))**_  
 
 ## **Results**    
 
