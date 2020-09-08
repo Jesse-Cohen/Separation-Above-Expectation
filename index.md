@@ -20,7 +20,7 @@ Starting with 22 features in 43,559 plays from 2017-2019, I iterated through doz
 
     * The difference (in yds) between the *Yards to Success* (based on down and distance) and the *Air Yards* of a play. *Yards to Success* and its use in *Yards Beyond Success* is further defined in **[Feature Analysis and Engineering](./Notebooks/Feature_Analysis_and_Engineering.html)**. 
     
-    * **EXAMPLE**: It's 2nd down with 10 yards to go at the team's own 33 yardline. On 2nd down, a play needs to gain 60 percent of the yards needed to gain a first down (6 yards, in this case) to be deemed a success (source: [Football Outsiders](https://www.footballoutsiders.com/info/methods)). On the play, the receiver was targeted at their own 44 yardline, or 11 yards from the line of scrimmage. Since the *Yards to Success* was 6, and the receiver was targeted 11 yards downfield, the *Yards Beyond Success* on the play was +5 yards (11-6=5). 
+    * **EXAMPLE**: It's 2nd down with 10 yards to go at the team's own 33 yardline. On 2nd down, a play needs to gain 60 percent of the yards needed to gain a first down (6 yards, in this case) to be deemed a success (source: [Football Outsiders](https://www.footballoutsiders.com/info/methods)). On the play, the receiver was targeted at their own 44 yardline, or 11 Air Yards. Since the *Yards to Success* was 6, and the receiver was targeted 11 yards downfield (Air Yards), the *Yards Beyond Success* on the play was +5 yards (11-6=5). 
 
 2. *Nearest Defender Position*
 
